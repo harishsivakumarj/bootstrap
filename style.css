@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+/* Hero Background Image */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the whole section */
+    filter: blur(8px); /* Adjust the blur effect as needed */
+}
+
+/* Hero Text Styling */
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+.destinations, .packages, .blog-posts, .tips {
+    padding: 60px 0;
+}
+
+.destinations .card, .packages .card, .blog-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destinations .card-img-top, .packages .card-img-top, .blog-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.destinations .card-body, .packages .card-body, .blog-card .blog-content {
+    padding: 15px;
+}
+
+.destinations h5, .packages h5, .blog-card h3 {
+    font-size: 1.25rem;
+}
+
+.blog-card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.blog-card .blog-content {
+    padding: 15px;
+}
+
+.blog-card h3 {
+    font-size: 1.5rem;
+}
+
+.tips i {
+    color: #007bff;
+}
+
+.footer {
+    background-color: #343a40;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+/* Contact Us Section */
+.contact-us {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.contact-us form {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-us .form-group label {
+    font-weight: bold;
+}
+
+.contact-us .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.contact-us .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.contact-us ul {
+    padding-left: 0;
+}
+
+.contact-us ul li {
+    margin-bottom: 10px;
+}
+
+.contact-us ul li i {
+    margin-right: 10px;
+    color: #007bff;
+}
+
+/* Responsive design for Contact Us Section */
+@media (max-width: 768px) {
+    .contact-us .form-group,
+    .contact-us ul {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-section .btn-primary {
+        font-size: 0.875rem;
+    }
+
+    .destinations .card-img-top, .packages .card-img-top, .blog-card img {
+        height: 150px;
+    }
+
+    .blog-card img {
+        height: 120px;
+    }
+/* Company Highlights Section */
+.company-highlights {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.company-highlights .highlight-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.company-highlights .highlight-card i {
+    color: #007bff; /* Optional: Change icon color to match your theme */
+}
+
+.company-highlights .highlight-card h3 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.company-highlights .highlight-card p {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+/* Responsive design for Company Highlights Section */
+@media (max-width: 768px) {
+    .company-highlights .highlight-card {
+        margin-bottom: 20px;
+    }
+}
